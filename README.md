@@ -10,7 +10,7 @@ The target is `TARGET_FLAG`. Files `SHELL_AUTO` and `MEAN_AUTO` are ignored for 
 
 This work is organised in 5 parts :
  - **II) Importing datasets** : we make the required imports and quickly analyse train and test sizes and target properties.
- - **III) Preprocessing** : we deal with some preprocessing issues such as fill missing values, encoding all numerical features as numbers, and harmonize notations of categorical features.
+ - **III) Preprocessing** : we deal with some preprocessing issues such as fill missing values, encode all numerical features as numbers, and harmonize notations of categorical features.
  - **IV) Exploratory data analysis** : we look into the distributions of feature values to discover patterns and get insights on each feature's predictive power. We also look at feature correlation.
  - **V) Model training** : first, we train a model on the whole dataset. As this gives unsatisfactory results, we downsample the dataset to get balanced target classes. We train three types of algorithms : Logistic Regression, Random Forest, Support Vector Machine (SVM). We use cross validation to compare their performances. We select the best model looking at accuracy and precision metrics.
- - **VI) Prediction on the test set** : we make the preprocessing transformations and the test set and predict target with selected model. The result is saved in a csv file named `test_predictions`.
+ - **VI) Prediction on the test set** : we make the preprocessing transformations on the test set and predict target with selected model. The result is saved in a csv file named `test_predictions`.
